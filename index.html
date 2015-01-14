@@ -13,5 +13,18 @@
   
   <img src="./flash.jpg" id="test_image" style="max-height: 550px; display: none;">
   
+  <script type="text/javascript" charset="utf-8">
+    var image = document.getElementById('test_image');
+    var time = 1; // Input the number of seconds for the image: 0.5, 1, or 4
+    
+    window.onload = function () {
+      image.style.display = 'inline';
+      setTimeout(function(){
+        image.style.display = 'none';
+      },time * 1000);
+      
+    }
+  </script>
+
 </body>
 </html>
